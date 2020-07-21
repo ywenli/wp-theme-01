@@ -76,7 +76,7 @@
                 <?php the_title(); ?>
               </h2>
               <h3 class="post-subtitle">
-                <?php the_content(); ?>
+                <?php the_excerpt(); ?>
               </h3>
             </a>
             <p class="post-meta">Posted by
@@ -126,6 +126,7 @@
         <hr>
         <!-- Pager -->
         <div class="clearfix">
+        <?php echo paginate_links(); ?>
           <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
         </div>
       </div>
